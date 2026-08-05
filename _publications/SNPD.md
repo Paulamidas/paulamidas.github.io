@@ -1,11 +1,23 @@
 ---
-title: "A scalable solution to AlphaZero based Redundancy Analysis for semiconductor chips"
-permalink: /publication/Scalable_Alphara
-date: 2023-03-23
-venue: 'ICMLA 2022'
+title: "Scaling Transformer Inference Through CPU and Memory Optimization"
+permalink: /publication/Scaling_Transformer
+date: 2024-12-04
+venue: 'SNPD 2024'
 ---
 
-_**Abstract**_ -- Manufacturing flaws in memory devices give rise to defective memory cells rendering the chips unusable and consequently reducing the wafer yield. To overcome the effect of faulty memory cells, redundancies are included in the form of spare rows and columns in the memory device. Redundancy Analysis (RA) is the process of mapping these spare rows and columns to repair faulty lines in the chip. Our previous work AlphaRA, an AlphaZero based Redundancy Analysis method, has demonstrated promising yields. However, training for large values of chip sizes (n) is time-consuming. In this paper, we introduce SAZRA, a scalable solution for AlphaZero based Redundancy Analysis algorithms with the use of Graph Neural Networks (GNNs). The memory chip is designed as a graph so that it can be used in GNNs, thus making the solution independent of n. With just a single training on a dataset of n=16 chips, we are able to achieve yields outperforming existing algorithms on n up to 128 times larger and previously unseen to the neural network. SAZRA maintains a high yield while having the least spare utilization across all chip sizes. It achieves scalability with reduction in training time, execution time, and GPU memory and disk memory requirements.
+_**Abstract**_ -- Transformer models have revolutionized various natural language processing tasks, offering unprecedented
+accuracy and flexibility. However, deploying these models for inference presents significant challenges, particularly when
+relying on GPUs. A single GPU cannot efficiently accelerate inferences, the GPU can also be considered as accelerator with
+powerful computing capabilities. Due to its limited memory capacity, which demands frequent transfers of the pre-trained
+model parameters needed by the GPU to compute subsequent layers from the CPU memory. While GPUs provide high
+computational throughput, their usage for inference comes with notable disadvantages, including high operational costs, thermal
+management challenges, hardware-software compatibility issues, and spatial constraints. Additionally, frequent transfers of these
+model parameters are executed over slow device interconnects such as PCIe or NVLink. In contrast, CPUs present several
+advantages for inference tasks, making them a practical option for users who seek efficient and cost-effective solutions, as they are
+widely available, offer a more energy-efficient alternative to GPUs, and provide significant opportunities for performance
+optimization despite their current underutilization. This paper explores optimization techniques for enhancing CPU performance
+in transformer inferences, focusing on underutilized resources such as CPU cores, DRAM Memory Bandwidth and Memory
+capacity. By improving memory management and usability, we were able to achieve 2.05x inference performance improvement.
 
-[paper link](https://ieeexplore.ieee.org/document/10069266)
+[paper link](https://ieeexplore.ieee.org/abstract/document/11481685)
 
