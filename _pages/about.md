@@ -13,7 +13,7 @@ redirect_from:
 
 
 <h1 align="center">Hi 👋, I am Paulami Das</h1>
-<h3 align="center">Associate Staff Engineer, Machine Learning at Samsung Semiconductor India Research</h3>
+<h3 align="center">Staff Engineer, Machine Learning at Samsung Semiconductor India Research</h3>
 
 
 
